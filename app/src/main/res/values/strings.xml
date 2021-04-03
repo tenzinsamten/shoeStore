@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Shoe Store</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="new_login">new Login</string>
+    <string name="existing_account">Existing Account</string>
+    <string name="welcome_to_shoe_store">Welcome to Shoe Store</string>
+    <string name="welcome_to_the_world_of_best_shoe_collection_on_your_finger_tips">Welcome to the world of best Shoe Collection on your finger tips</string>
+    <string name="continues">Continue</string>
+    <string name="instructions">Instructions</string>
+    <string name="app_instruction">Since App is under development, the added shoe list will be lost when you close the app.</string>
+    <string name="ok">ok</string>
+    <string name="accept">accept</string>
+    <string name="add_shoe">add shoe to the list</string>
+    <string name="shoe_name">Name</string>
+    <string name="company">Brand</string>
+    <string name="size">Size</string>
+    <string name="description">Description</string>
+    <string name="cancel">Cancel</string>
+    <string name="email_key">email_key</string>
+    <string name="empty_list">Empty List..Add shoe using button below</string>
+</resources>

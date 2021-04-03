@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="login"
+            type="com.udacity.shoestore.fragments.login.LoginFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/margin_horizontal"
+        android:layout_marginEnd="@dimen/margin_horizontal"
+        tools:context=".fragments.login.LoginFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:layout_marginTop="@dimen/margin_horizontal"
+                style="@style/app_label_style" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:hint="@string/email"
+                android:ems="10"
+                android:autofillHints="@string/email"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:layout_marginTop="@dimen/margin_horizontal"
+                style="@style/app_label_style" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:hint="@string/password"
+                android:ems="10"
+                android:autofillHints="@string/password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/logInButton"
+                android:layout_marginTop="@dimen/margin_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
+                android:onClick="@{() -> login.onButtonClicked()}"
+                android:text="@string/existing_account" />
+
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:textColor="@android:color/white"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:onClick="@{() -> login.onButtonClicked()}"
+                android:layout_height="wrap_content"
+                android:text="@string/new_login" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

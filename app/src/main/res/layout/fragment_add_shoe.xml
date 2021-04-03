@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="shoeViewModel"
+            type="com.udacity.shoestore.fragments.shoelist.ShoeListViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_horizontal"
+        android:orientation="vertical"
+        tools:context=".fragments.addshoe.AddShoeFragment">
+
+        <TextView
+            style="@style/app_label_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shoe_name" />
+
+        <EditText
+            android:id="@+id/shoeNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:autofillHints="@string/shoe_name"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/shoe_name"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            style="@style/app_label_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/company" />
+
+        <EditText
+            android:id="@+id/shoeBrandEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:autofillHints="@string/company"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/company"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            style="@style/app_label_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/size" />
+
+        <EditText
+            android:id="@+id/shoeSizeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:autofillHints="@string/size"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/size"
+            android:inputType="number"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            style="@style/app_label_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description" />
+
+        <EditText
+            android:id="@+id/shoeDescriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:autofillHints="@string/description"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/description"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_horizontal"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/add_shoe"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:background="@color/colorAccent"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</layout>
