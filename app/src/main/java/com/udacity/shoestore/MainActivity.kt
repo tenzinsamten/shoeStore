@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
             DataBindingUtil.setContentView(this, R.layout.activity_main)
         Timber.plant(Timber.DebugTree())
         shoeListViewModel = ViewModelProvider(this).get(ShoeListViewModel::class.java)
-        binding.shoeListViewModel = shoeListViewModel
         binding.toolbar.title = resources.getString(R.string.app_name)
         setSupportActionBar(binding.toolbar)
 
