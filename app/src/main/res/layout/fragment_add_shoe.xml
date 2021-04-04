@@ -32,6 +32,7 @@
             android:fontFamily="@font/roboto"
             android:hint="@string/shoe_name"
             android:inputType="text"
+            android:text="@={shoeViewModel.shoe.name}"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
 
@@ -49,6 +50,7 @@
             android:autofillHints="@string/company"
             android:fontFamily="@font/roboto"
             android:hint="@string/company"
+            android:text="@={shoeViewModel.shoe.company}"
             android:inputType="text"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
@@ -67,6 +69,7 @@
             android:autofillHints="@string/size"
             android:fontFamily="@font/roboto"
             android:hint="@string/size"
+            android:text="@={`` + shoeViewModel.shoe.size}"
             android:inputType="number"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
@@ -86,6 +89,7 @@
             android:fontFamily="@font/roboto"
             android:hint="@string/description"
             android:inputType="text"
+            android:text="@={shoeViewModel.shoe.description}"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
 

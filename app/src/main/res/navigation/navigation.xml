@@ -63,10 +63,13 @@
             app:exitAnim="@anim/slide_out_right"
             app:popEnterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_left"
-            app:popUpTo="@id/loginFragment" />
+            app:popUpTo="@id/shoeListFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_shoeListFragment_to_addShoeFragment"
-            app:destination="@id/addShoeFragment" />
+            app:destination="@id/addShoeFragment"
+            app:popUpTo="@id/shoeListFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/addShoeFragment"

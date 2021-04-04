@@ -23,7 +23,6 @@ class LoginFragment : Fragment() {
 
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login, container, false)
         binding.login = this
-        val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE)
 
         return binding.root
     }

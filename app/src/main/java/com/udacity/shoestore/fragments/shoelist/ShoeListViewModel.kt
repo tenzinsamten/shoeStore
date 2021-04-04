@@ -11,19 +11,23 @@ open class ShoeListViewModel : ViewModel() {
     val shoeList: LiveData<ArrayList<Shoe>>
         get() = _shoeList
 
-    private val _name = MutableLiveData<String>()
-    val name: LiveData<String>
-        get() = _name
+    private val _shoe = MutableLiveData<Shoe>()
+    val shoe: LiveData<Shoe>
+        get() = _shoe
 
     init {
-        _name.value = "name"
         _shoeList.value = ArrayList()
+        _shoe.value = Shoe()
     }
 
-    fun addNewShoe(shoe: Shoe){
-        _shoeList.value?.add(shoe)
+    fun addNewShoe() {
+        _shoeList.value?.add(shoe.value!!)
+        _shoe.value = Shoe()
     }
 
+    fun clearShoeContent() {
+        _shoe.value = Shoe()
+    }
 
 
 }
